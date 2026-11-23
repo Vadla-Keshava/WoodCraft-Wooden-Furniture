@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WoodCraft - handcrafted wooden furniture and home decor." />
+  <title>WoodCraft | Timeless Wooden Furniture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home"><span class="logo-mark">W</span> woodcraft<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#collections">Collections</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="cart" href="#collections">Cart <span id="cartCount">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">NATURAL MATERIALS. TIMELESS DESIGN.</p>
+        <h1>Bring the warmth<br>of wood <em>home.</em></h1>
+        <p class="hero-copy">Thoughtfully crafted furniture made to be part of your story for generations.</p>
+        <a class="btn btn-light" href="#collections">Explore collection <span>↗</span></a>
+      </div>
+      <div class="hero-note"><span>01 / 03</span><span>Crafted with care, made to last.</span></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div><p class="eyebrow">THE WOODCRAFT DIFFERENCE</p><h2>Made by hand.<br><em>Loved for years.</em></h2></div>
+      <p class="intro-text">We believe the best spaces feel natural. Our furniture celebrates the unique grain, texture and character of responsibly sourced wood — shaped by skilled hands and designed for everyday living.</p>
+    </section>
+
+    <section class="products section" id="collections">
+      <div class="section-heading"><div><p class="eyebrow">SHOP OUR FAVORITES</p><h2>Pieces with <em>character.</em></h2></div><p>Simple forms. Beautiful materials.<br>Made for the way you live.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All pieces</button>
+        <button class="filter" data-category="Living">Living</button>
+        <button class="filter" data-category="Dining">Dining</button>
+        <button class="filter" data-category="Decor">Decor</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="banner">
+      <div><p class="eyebrow">A LITTLE MORE PERSONAL</p><h2>Your home deserves<br><em>something real.</em></h2><p>Natural wood, thoughtful details and furniture that feels like it belongs.</p><a class="btn btn-light" href="#contact">Talk to our team <span>↗</span></a></div>
+    </section>
+
+    <section class="values section">
+      <article><span>01</span><h3>Honest materials</h3><p>We celebrate natural wood, its grain, knots and one-of-a-kind details.</p></article>
+      <article><span>02</span><h3>Made to last</h3><p>Careful construction and timeless silhouettes for everyday use.</p></article>
+      <article><span>03</span><h3>Crafted with care</h3><p>Every piece is thoughtfully finished by people who love their craft.</p></article>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div><p class="eyebrow">LET'S MAKE YOUR SPACE YOURS</p><h2>Have a project<br>in <em>mind?</em></h2><p>Tell us what you're looking for. We'd love to help.</p></div>
+      <form id="contactForm">
+        <label>Your name<input type="text" name="name" placeholder="Name" required></label>
+        <label>Email address<input type="email" name="email" placeholder="you@example.com" required></label>
+        <label>What can we help with?<textarea name="message" rows="4" placeholder="Tell us about your idea..." required></textarea></label>
+        <button class="btn btn-dark" type="submit">Send message <span>↗</span></button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#home"><span class="logo-mark">W</span> woodcraft<span>.</span></a><p>Natural wood. Thoughtful living.</p><small>© 2026 WoodCraft. Demo frontend project.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
